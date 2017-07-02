@@ -17,8 +17,10 @@ students.
 
 WiFiTick has the following features:
 
-* Low cost - ideal for student projects
-* 4 MiB flash, so lots of space for ESP8266 programs and SPIFFS 
+* Low cost - ideal for WiFi enabled student projects
+  (WiFi client and WiFi access point modes available)
+* 4 MiB flash, so lots of space for ESP8266 programs and
+  embedded file systems (SPIFFS) 
 * Integrated PCB antenna
 * Single 5V power supply (via USB/launchpad). There is a separate
   3.3V regulator on the board.
@@ -38,6 +40,7 @@ WiFiTick has the following features:
 * User-controllable LED on the board (can e.g. simulate the behaviour of the
   LED on the well-known ESP-12E/F boards)
 
-This project contains the Hardware design files, which were developed
-using [KiCad EDA](http://kicad-pcb.org/).
+This project contains the hardware design files, which were developed
+using [KiCad EDA](http://kicad-pcb.org/). The related software will be
+published in a separate project.
 

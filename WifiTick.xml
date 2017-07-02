@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/aterstegge/git/WifiTick/WifiTick.sch</source>
+    <date>Fr 28 Okt 2016 19:50:37 CEST</date>
+    <tool>Eeschema 4.0.4+e1-6308~48~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>WifiTick.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1B5B6</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10pF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1C53C</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10pF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1C5B4</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1E49F</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1F7BF</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E1F91B</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E20860</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E20A9C</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E20FEA</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E21C82</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E21D2B</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>5.6pF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E2366B</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E241C1</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>25Q32</value>
+      <footprint>Housings_SOIC:SOIJ-8_5.3x5.3mm_Pitch1.27mm</footprint>
+      <libsource lib="WifiTickLibrary" part="25Q32"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E26A11</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>ESP8266</value>
+      <footprint>Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm</footprint>
+      <libsource lib="WifiTickLibrary" part="ESP8266"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E26B0C</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>header20</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x10</footprint>
+      <libsource lib="WifiTickLibrary" part="header20"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E26B85</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>TPS73533</value>
+      <footprint>WifiTick:VSON-8</footprint>
+      <libsource lib="WifiTickLibrary" part="TPS735"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E26C2E</tstamp>
+    </comp>
+    <comp ref="A1">
+      <value>ANT</value>
+      <footprint>WifiTick:WIFI_ANTENNA_MIRROR</footprint>
+      <libsource lib="WifiTickLibrary" part="ANT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E2ABA9</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>26MHz</value>
+      <footprint>Crystals:crystal_FA238-TSX3225</footprint>
+      <libsource lib="device" part="CRYSTAL_SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E2B246</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100uF</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57E2C819</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>CONN_01X01</value>
+      <footprint>WifiTick:1x1_Solderpad</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5804F0A1</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CF7CD</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CF84D</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CF8CB</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580CF951</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580D038C</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580D0392</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580D0398</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580D039E</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>470</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>580D03A4</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="WifiTickLibrary" part="25Q32">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">25Q32</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CS" type="input"/>
+        <pin num="2" name="DO(IO1)" type="output"/>
+        <pin num="3" name="~WP~(IO2)" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DI(IO0)" type="input"/>
+        <pin num="6" name="CLK" type="input"/>
+        <pin num="7" name="~HOLD~(IO3)" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WifiTickLibrary" part="ANT">
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">ANT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ANT" type="passive"/>
+        <pin num="2" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <description>Connector 01x01</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CRYSTAL_SMD">
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">CRYSTAL_SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="case" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WifiTickLibrary" part="ESP8266">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP8266</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDDA" type="power_in"/>
+        <pin num="2" name="LNA" type="output"/>
+        <pin num="3" name="VDD3P3" type="power_in"/>
+        <pin num="4" name="VDD3V3" type="power_in"/>
+        <pin num="5" name="VDD_RTC" type="power_out"/>
+        <pin num="6" name="TOUT" type="input"/>
+        <pin num="7" name="CHIP_PU" type="input"/>
+        <pin num="8" name="XPD_DCDC/GPIO16" type="BiDi"/>
+        <pin num="9" name="GPIO14/HSPI_CLK" type="BiDi"/>
+        <pin num="10" name="GPIO12/HSPI_MISO" type="BiDi"/>
+        <pin num="11" name="VDDPST" type="power_in"/>
+        <pin num="12" name="GPIO13/HSPI_MOSI" type="BiDi"/>
+        <pin num="13" name="GPIO15/HSPI_CS" type="BiDi"/>
+        <pin num="14" name="GPIO2" type="BiDi"/>
+        <pin num="15" name="GPIO0" type="BiDi"/>
+        <pin num="16" name="GPIO4" type="BiDi"/>
+        <pin num="17" name="VDDPST" type="power_in"/>
+        <pin num="18" name="GPIO9/SPI_HD" type="output"/>
+        <pin num="19" name="GPIO10/SPI_WP" type="output"/>
+        <pin num="20" name="GPIO11/SPI_CS0" type="output"/>
+        <pin num="21" name="GPIO6/SPI_CLK" type="output"/>
+        <pin num="22" name="GPIO7/SPI_MISO" type="input"/>
+        <pin num="23" name="GPIO8/SPI_MOSI" type="output"/>
+        <pin num="24" name="GPIO5" type="BiDi"/>
+        <pin num="25" name="GPIO3/U0RXD" type="input"/>
+        <pin num="26" name="GPIO1/U0TXD" type="output"/>
+        <pin num="27" name="XTAL_OUT" type="output"/>
+        <pin num="28" name="XTAL_IN" type="input"/>
+        <pin num="29" name="VDDD" type="power_in"/>
+        <pin num="30" name="VDDA" type="power_in"/>
+        <pin num="31" name="RES_12K" type="input"/>
+        <pin num="32" name="EXT_RSTB" type="input"/>
+        <pin num="33" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="WifiTickLibrary" part="TPS735">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS735</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT" type="power_out"/>
+        <pin num="2" name="NC0" type="passive"/>
+        <pin num="3" name="NR" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="EN" type="input"/>
+        <pin num="6" name="NC1" type="passive"/>
+        <pin num="7" name="NC2" type="passive"/>
+        <pin num="8" name="IN" type="power_in"/>
+        <pin num="9" name="PAD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="WifiTickLibrary" part="header20">
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">header20</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="~" type="passive"/>
+        <pin num="10" name="~" type="passive"/>
+        <pin num="11" name="~" type="passive"/>
+        <pin num="12" name="~" type="passive"/>
+        <pin num="13" name="~" type="passive"/>
+        <pin num="14" name="~" type="passive"/>
+        <pin num="15" name="~" type="passive"/>
+        <pin num="16" name="~" type="passive"/>
+        <pin num="17" name="~" type="passive"/>
+        <pin num="18" name="~" type="passive"/>
+        <pin num="19" name="~" type="passive"/>
+        <pin num="20" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="WifiTickLibrary">
+      <uri>/home/aterstegge/git/WifiTick/WifiTickLibrary.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(H1-Pad7)">
+      <node ref="H1" pin="7"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="2" name="Net-(H1-Pad12)">
+      <node ref="R9" pin="2"/>
+      <node ref="H1" pin="12"/>
+    </net>
+    <net code="3" name="Net-(H1-Pad11)">
+      <node ref="H1" pin="11"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="4" name="Net-(H1-Pad10)">
+      <node ref="R8" pin="2"/>
+      <node ref="H1" pin="10"/>
+    </net>
+    <net code="5" name="Net-(H1-Pad9)">
+      <node ref="H1" pin="9"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="6" name="Net-(H1-Pad5)">
+      <node ref="R1" pin="1"/>
+      <node ref="H1" pin="5"/>
+    </net>
+    <net code="7" name="/UCA3TXD">
+      <node ref="H1" pin="3"/>
+      <node ref="U2" pin="25"/>
+    </net>
+    <net code="8" name="Net-(A1-Pad1)">
+      <node ref="A1" pin="1"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="C3" pin="2"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="X1" pin="3"/>
+      <node ref="A1" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="H1" pin="20"/>
+      <node ref="U3" pin="4"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U1" pin="9"/>
+      <node ref="U1" pin="7"/>
+      <node ref="H1" pin="19"/>
+      <node ref="U1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U2" pin="33"/>
+      <node ref="C2" pin="2"/>
+    </net>
+    <net code="10" name="Net-(C2-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="11" name="Net-(H1-Pad18)">
+      <node ref="H1" pin="18"/>
+    </net>
+    <net code="12" name="Net-(H1-Pad17)">
+      <node ref="H1" pin="17"/>
+    </net>
+    <net code="13" name="Net-(U2-Pad20)">
+      <node ref="U3" pin="1"/>
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="14" name="Net-(P1-Pad1)">
+      <node ref="P1" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="15" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="16" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="17" name="+3V3">
+      <node ref="U2" pin="29"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U2" pin="17"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U2" pin="11"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R10" pin="2"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="1"/>
+      <node ref="U2" pin="30"/>
+    </net>
+    <net code="18" name="Net-(U2-Pad19)">
+      <node ref="U3" pin="3"/>
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="19" name="Net-(U2-Pad18)">
+      <node ref="U3" pin="7"/>
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="20" name="Net-(U2-Pad23)">
+      <node ref="U2" pin="23"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="21" name="Net-(R11-Pad1)">
+      <node ref="U2" pin="31"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="22" name="Net-(U2-Pad21)">
+      <node ref="U3" pin="6"/>
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="23" name="Net-(H1-Pad8)">
+      <node ref="R7" pin="2"/>
+      <node ref="H1" pin="8"/>
+    </net>
+    <net code="24" name="/7.6">
+      <node ref="U2" pin="16"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="25" name="Net-(H1-Pad6)">
+      <node ref="H1" pin="6"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="26" name="/7.4">
+      <node ref="R6" pin="1"/>
+      <node ref="U2" pin="15"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="27" name="Net-(H1-Pad4)">
+      <node ref="R5" pin="2"/>
+      <node ref="H1" pin="4"/>
+    </net>
+    <net code="28" name="/8.0">
+      <node ref="R5" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="29" name="+5V">
+      <node ref="H1" pin="15"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="8"/>
+      <node ref="H1" pin="16"/>
+    </net>
+    <net code="31" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="X1" pin="1"/>
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="32" name="Net-(U2-Pad22)">
+      <node ref="U2" pin="22"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="33" name="/10.5">
+      <node ref="U2" pin="32"/>
+      <node ref="H1" pin="13"/>
+    </net>
+    <net code="34" name="/10.4">
+      <node ref="H1" pin="14"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="35" name="/UCB3STE">
+      <node ref="R8" pin="1"/>
+      <node ref="U2" pin="13"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="36" name="/UCB3MOSI">
+      <node ref="U2" pin="12"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="37" name="/UCB3MISO">
+      <node ref="U2" pin="10"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="38" name="/UCB3CLK">
+      <node ref="U2" pin="9"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="39" name="/7.7">
+      <node ref="U2" pin="24"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="40" name="/7.5">
+      <node ref="R13" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="41" name="Net-(C5-Pad1)">
+      <node ref="U2" pin="28"/>
+      <node ref="X1" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="42" name="/9.5">
+      <node ref="H1" pin="1"/>
+      <node ref="U2" pin="7"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="43" name="/UCA3RXD">
+      <node ref="U2" pin="26"/>
+      <node ref="H1" pin="2"/>
+    </net>
+  </nets>
+</export>

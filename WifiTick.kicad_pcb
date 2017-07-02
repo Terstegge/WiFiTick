@@ -3,7 +3,7 @@
   (general
     (links 133)
     (no_connects 0)
-    (area 106.028167 66.194 148.27191 90.8205)
+    (area 108.598499 67.259999 145.528501 87.235501)
     (thickness 1.6)
     (drawings 6)
     (tracks 530)
@@ -91,7 +91,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory Gerber_v2/))
+      (outputdirectory Gerber/))
   )
 
   (net 0 "")
@@ -694,7 +694,7 @@
     (at 117.6655 85.217)
     (descr "LED 0603 smd package")
     (tags "LED led 0603 SMD smd SMT smt smdled SMDLED smtled SMTLED")
-    (path /57E1B5B6)
+    (path /595959F3)
     (attr smd)
     (fp_text reference D1 (at 0 1.0795) (layer F.SilkS)
       (effects (font (size 0.508 0.508) (thickness 0.127)))

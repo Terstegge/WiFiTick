@@ -11,7 +11,7 @@ WiFiTick front and back view:
 ![WiFiTick picture 2](images/WiFiTick_front_back.png)
 
 WiFiTick is a small add-on board for the
-[MSP432 lauchpad}(http://www.ti.com/tool/MSP-EXP432P401R) from Texas Instruments.
+[MSP432 lauchpad](http://www.ti.com/tool/MSP-EXP432P401R) from Texas Instruments.
 The MSP432 launchpad is a nice microcontroller board with a Cortex M4F processor
 and a on-board debug facility. WiFiTick adds WiFi functionality to the lauchpad,
 using a ESP8266, which is a cheap but very powerful WLAN-enabled microcontroller

@@ -25,7 +25,7 @@ WiFiTick has the following features:
 * No interference with other booster packs, because the additional 
   horizontal header of the MSP432 lauchpad is used
 * No need to disconnect from launchpad: With a special software, the MSP432
-  launchpad serves as a programming adapter (via a serial interface). This
+  launchpad serves as a programming adapter (via a UART interface). This
   software features automatic baud rate control, so boot messages of the
   ESP8266 are readable.
 * Easy programming of ESP8266 with Arduino IDE

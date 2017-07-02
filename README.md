@@ -30,11 +30,14 @@ WiFiTick has the following features:
   ESP8266 are readable.
 * Easy programming of ESP8266 with Arduino IDE
 * Full control of the ESP8266 from MSP432 side. The MSP432 can ...
-    * Reset / Power up/down the ESP8266
+    * Reset, Power up/down or wake up the ESP8266
     * Communicate with the ESP8266 via SPI (or any other protocol -
       there are 8 GPIOs plus the programming UART available for
-      the data interface).
+      data exchange).
 * Additional ADC input pad for the ESP8266
-* User-controllable LED on the board. 
+* User-controllable LED on the board (can e.g. simulate the behaviour of the
+  LED on the well-known ESP-12E/F boards)
 
+This project contains the Hardware design files, which were developed
+using [KiCad EDA](http://kicad-pcb.org/).
 

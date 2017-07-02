@@ -10,5 +10,31 @@ WiFiTick front and back view:
 
 ![WiFiTick picture 2](images/WiFiTick_front_back.png)
 
+Texas Instruments have their own WiFi solution (e.g. the CC3100 booster pack).
+But these boards have to be disconnected from the lauchpad when you want to 
+flash a new firmware to the WiFi board. This makes it a little bit unhandy for
+students.
+
+WiFiTick has the following features:
+
+* Low cost - ideal for student projects
+* 4 MiB flash, so lots of space for ESP8266 programs and SPIFFS 
+* Integrated PCB antenna
+* Single 5V power supply (via USB/launchpad). There is a separate
+  3.3V regulator on the board.
+* No interference with other booster packs, because the additional 
+  horizontal header of the MSP432 lauchpad is used
+* No need to disconnect from launchpad: With a special software, the MSP432
+  launchpad serves as a programming adapter (via a serial interface). This
+  software features automatic baud rate control, so boot messages of the
+  ESP8266 are readable.
+* Easy programming of ESP8266 with Arduino IDE
+* Full control of the ESP8266 from MSP432 side. The MSP432 can ...
+    * Reset / Power up/down the ESP8266
+    * Communicate with the ESP8266 via SPI (or any other protocol -
+      there are 8 GPIOs plus the programming UART available for
+      the data interface).
+* Additional ADC input pad for the ESP8266
+* User-controllable LED on the board. 
 
 

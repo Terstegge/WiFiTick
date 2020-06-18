@@ -1,36 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:WifiTickLibrary
-LIBS:WifiTick-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -57,7 +26,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 4300 8000 4300
 $Comp
-L +3.3V #PWR01
+L power:+3.3V #PWR01
 U 1 1 57E1959D
 P 5300 3100
 F 0 "#PWR01" H 5300 2950 50  0001 C CNN
@@ -70,7 +39,7 @@ $EndComp
 Wire Wire Line
 	6150 4000 6300 4000
 Wire Wire Line
-	6150 3100 6150 4000
+	6150 3100 6150 3250
 Connection ~ 6150 3100
 Wire Wire Line
 	6300 3250 6150 3250
@@ -86,7 +55,7 @@ Wire Wire Line
 	6300 3850 6150 3850
 Connection ~ 6150 3850
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 57E1965B
 P 5850 4800
 F 0 "#PWR02" H 5850 4550 50  0001 C CNN
@@ -97,9 +66,9 @@ F 3 "" H 5850 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 4750 6300 4750
+	4950 4750 5200 4750
 Wire Wire Line
-	5850 4600 5850 4800
+	5850 4600 5850 4750
 Text Label 1200 1850 0    60   ~ 0
 9.5
 Text Label 1200 2150 0    60   ~ 0
@@ -119,7 +88,7 @@ UCB3MOSI
 Text Label 3550 2750 0    60   ~ 0
 10.4
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 57E1AAF3
 P 2850 3200
 F 0 "#PWR03" H 2850 2950 50  0001 C CNN
@@ -130,7 +99,7 @@ F 3 "" H 2850 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
+L power:+5V #PWR04
 U 1 1 57E1ABBB
 P 3100 2900
 F 0 "#PWR04" H 3100 2750 50  0001 C CNN
@@ -183,7 +152,7 @@ Wire Wire Line
 Text Label 6000 2600 0    60   ~ 0
 9.5
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 57E1B3E7
 P 10100 4300
 F 0 "#PWR05" H 10100 4050 50  0001 C CNN
@@ -194,7 +163,7 @@ F 3 "" H 10100 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR06
+L power:+3.3V #PWR06
 U 1 1 57E1B404
 P 10100 3550
 F 0 "#PWR06" H 10100 3400 50  0001 C CNN
@@ -205,7 +174,7 @@ F 3 "" H 10100 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 57E1B6F9
 P 4150 2400
 F 0 "#PWR07" H 4150 2150 50  0001 C CNN
@@ -220,7 +189,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 4200 4950 4350
 $Comp
-L C C4
+L WifiTick-rescue:C C4
 U 1 1 57E1C53C
 P 4950 4500
 F 0 "C4" H 4850 4600 50  0000 L CNN
@@ -231,7 +200,7 @@ F 3 "" H 4950 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L WifiTick-rescue:C C5
 U 1 1 57E1C5B4
 P 5450 4500
 F 0 "C5" H 5475 4600 50  0000 L CNN
@@ -242,7 +211,7 @@ F 3 "" H 5450 4500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R11
+L WifiTick-rescue:R R11
 U 1 1 57E1E49F
 P 6150 4600
 F 0 "R11" V 6050 4550 50  0000 C CNN
@@ -263,7 +232,7 @@ Connection ~ 5450 4750
 Wire Wire Line
 	6000 4600 5850 4600
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 57E1F4D8
 P 2200 5800
 F 0 "#PWR08" H 2200 5550 50  0001 C CNN
@@ -274,32 +243,32 @@ F 3 "" H 2200 5800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 5600 2200 5800
+	2200 5600 2200 5700
 Wire Wire Line
 	2350 5600 2350 5700
 Wire Wire Line
 	2350 5700 2200 5700
 Connection ~ 2200 5700
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 57E1F6AF
-P 3500 5100
-F 0 "#PWR09" H 3500 4850 50  0001 C CNN
-F 1 "GND" H 3500 4950 50  0000 C CNN
-F 2 "" H 3500 5100 50  0000 C CNN
-F 3 "" H 3500 5100 50  0000 C CNN
-	1    3500 5100
+P 3500 5400
+F 0 "#PWR09" H 3500 5150 50  0001 C CNN
+F 1 "GND" H 3500 5250 50  0000 C CNN
+F 2 "" H 3500 5400 50  0000 C CNN
+F 3 "" H 3500 5400 50  0000 C CNN
+	1    3500 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 4800 1900 4800
+	1400 4800 1750 4800
 Wire Wire Line
 	1900 4900 1750 4900
 Wire Wire Line
 	1750 4900 1750 4800
 Connection ~ 1750 4800
 $Comp
-L +5V #PWR010
+L power:+5V #PWR010
 U 1 1 57E1F78A
 P 1400 4800
 F 0 "#PWR010" H 1400 4650 50  0001 C CNN
@@ -310,31 +279,31 @@ F 3 "" H 1400 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L WifiTick-rescue:C C1
 U 1 1 57E1F7BF
-P 1400 4950
-F 0 "C1" H 1425 5050 50  0000 L CNN
-F 1 "1uF" H 1425 4850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1438 4800 50  0001 C CNN
-F 3 "" H 1400 4950 50  0000 C CNN
-	1    1400 4950
+P 1400 5250
+F 0 "C1" H 1250 5350 50  0000 L CNN
+F 1 "1uF" H 1250 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1438 5100 50  0001 C CNN
+F 3 "" H 1400 5250 50  0000 C CNN
+	1    1400 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 57E1F854
-P 1400 5100
-F 0 "#PWR011" H 1400 4850 50  0001 C CNN
-F 1 "GND" H 1400 4950 50  0000 C CNN
-F 2 "" H 1400 5100 50  0000 C CNN
-F 3 "" H 1400 5100 50  0000 C CNN
-	1    1400 5100
+P 1400 5400
+F 0 "#PWR011" H 1400 5150 50  0001 C CNN
+F 1 "GND" H 1400 5250 50  0000 C CNN
+F 2 "" H 1400 5400 50  0000 C CNN
+F 3 "" H 1400 5400 50  0000 C CNN
+	1    1400 5400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3000 4800 3500 4800
 $Comp
-L +3.3V #PWR012
+L power:+3.3V #PWR012
 U 1 1 57E1F8E3
 P 3500 4800
 F 0 "#PWR012" H 3500 4650 50  0001 C CNN
@@ -345,10 +314,10 @@ F 3 "" H 3500 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L WifiTick-rescue:C C2
 U 1 1 57E1F91B
 P 1900 5250
-F 0 "C2" H 1800 5350 50  0000 L CNN
+F 0 "C2" H 1750 5350 50  0000 L CNN
 F 1 "10nF" H 1700 5150 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 1938 5100 50  0001 C CNN
 F 3 "" H 1900 5250 50  0000 C CNN
@@ -356,7 +325,7 @@ F 3 "" H 1900 5250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 57E1F99B
 P 1900 5400
 F 0 "#PWR013" H 1900 5150 50  0001 C CNN
@@ -369,7 +338,7 @@ $EndComp
 Connection ~ 3500 4800
 Connection ~ 1400 4800
 $Comp
-L C C8
+L WifiTick-rescue:C C8
 U 1 1 57E20860
 P 10100 3700
 F 0 "C8" H 10125 3800 50  0000 L CNN
@@ -380,7 +349,7 @@ F 3 "" H 10100 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 57E209BD
 P 10100 3850
 F 0 "#PWR014" H 10100 3600 50  0001 C CNN
@@ -392,7 +361,7 @@ F 3 "" H 10100 3850 50  0000 C CNN
 $EndComp
 Connection ~ 10100 3550
 $Comp
-L C C6
+L WifiTick-rescue:C C6
 U 1 1 57E20A9C
 P 5500 3250
 F 0 "C6" H 5525 3350 50  0000 L CNN
@@ -403,7 +372,7 @@ F 3 "" H 5500 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 57E20B24
 P 5500 3400
 F 0 "#PWR015" H 5500 3150 50  0001 C CNN
@@ -415,7 +384,7 @@ F 3 "" H 5500 3400 50  0000 C CNN
 $EndComp
 Connection ~ 5500 3100
 $Comp
-L R R12
+L WifiTick-rescue:R R12
 U 1 1 57E20FEA
 P 8900 2500
 F 0 "R12" V 8800 2450 50  0000 C CNN
@@ -428,7 +397,7 @@ $EndComp
 Wire Wire Line
 	9050 2500 9300 2500
 $Comp
-L GND #PWR016
+L power:GND #PWR016
 U 1 1 57E21268
 P 9300 2500
 F 0 "#PWR016" H 9300 2250 50  0001 C CNN
@@ -441,7 +410,7 @@ $EndComp
 Wire Wire Line
 	8000 2500 8750 2500
 $Comp
-L R R13
+L WifiTick-rescue:R R13
 U 1 1 57E21C82
 P 8900 2800
 F 0 "R13" V 8800 2750 50  0000 C CNN
@@ -452,7 +421,7 @@ F 3 "" H 8900 2800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R14
+L WifiTick-rescue:R R14
 U 1 1 57E21D2B
 P 8900 2950
 F 0 "R14" V 9000 2900 50  0000 C CNN
@@ -463,7 +432,7 @@ F 3 "" H 8900 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR017
+L power:+3.3V #PWR017
 U 1 1 57E22005
 P 9300 2950
 F 0 "#PWR017" H 9300 2800 50  0001 C CNN
@@ -474,14 +443,14 @@ F 3 "" H 9300 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 2950 9300 2950
+	9050 2950 9100 2950
 Wire Wire Line
 	9050 2800 9100 2800
 Wire Wire Line
 	9100 2800 9100 2950
 Connection ~ 9100 2950
 $Comp
-L C C7
+L WifiTick-rescue:C C7
 U 1 1 57E2366B
 P 6150 2050
 F 0 "C7" V 6300 2100 50  0000 L CNN
@@ -492,7 +461,7 @@ F 3 "" H 6150 2050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R10
+L WifiTick-rescue:R R10
 U 1 1 57E241C1
 P 5800 2600
 F 0 "R10" V 5700 2550 50  0000 C CNN
@@ -523,7 +492,7 @@ UCA3TXD
 NoConn ~ 2850 3050
 NoConn ~ 2050 3050
 Wire Wire Line
-	5300 3100 6300 3100
+	5300 3100 5500 3100
 Wire Wire Line
 	6150 3700 6300 3700
 Text Label 1200 2000 0    60   ~ 0
@@ -531,7 +500,7 @@ UCA3TXD
 Text Label 3350 1850 0    60   ~ 0
 UCA3RXD
 $Comp
-L 25Q32 U3
+L WifiTickLibrary:25Q32 U3
 U 1 1 57E26A11
 P 9450 3950
 F 0 "U3" H 9000 4500 60  0000 C CNN
@@ -542,7 +511,7 @@ F 3 "" H 9550 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ESP8266 U2
+L WifiTickLibrary:ESP8266 U2
 U 1 1 57E26B0C
 P 7150 3450
 F 0 "U2" H 6550 5050 60  0000 C CNN
@@ -553,7 +522,7 @@ F 3 "" H 7150 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L header20 H1
+L WifiTickLibrary:header20 H1
 U 1 1 57E26B85
 P 2450 2500
 F 0 "H1" H 2400 3250 60  0000 C CNN
@@ -564,7 +533,7 @@ F 3 "" V 2500 2450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TPS735 U1
+L WifiTickLibrary:TPS735 U1
 U 1 1 57E26C2E
 P 2450 5050
 F 0 "U1" H 2150 5450 60  0000 C CNN
@@ -583,7 +552,7 @@ Text Label 3600 2300 0    60   ~ 0
 Wire Wire Line
 	5500 3100 5500 2600
 $Comp
-L ANT A1
+L WifiTickLibrary:ANT A1
 U 1 1 57E2ABA9
 P 5900 1150
 F 0 "A1" H 6100 1450 60  0000 C CNN
@@ -598,7 +567,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 2050 6000 2050
 $Comp
-L CRYSTAL_SMD X1
+L WifiTick-rescue:CRYSTAL_SMD X1
 U 1 1 57E2B246
 P 5200 4350
 F 0 "X1" H 5100 4450 50  0000 C CNN
@@ -611,23 +580,23 @@ $EndComp
 Wire Wire Line
 	4950 4350 5000 4350
 Wire Wire Line
-	5400 4350 6300 4350
+	5400 4350 5450 4350
 Wire Wire Line
 	5200 4450 5200 4750
 Connection ~ 5200 4750
 $Comp
-L C C3
+L WifiTick-rescue:C C3
 U 1 1 57E2C819
-P 3500 4950
-F 0 "C3" H 3525 5050 50  0000 L CNN
-F 1 "100uF" H 3525 4850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 3538 4800 50  0001 C CNN
-F 3 "" H 3500 4950 50  0000 C CNN
-	1    3500 4950
+P 3500 5250
+F 0 "C3" H 3350 5350 50  0000 L CNN
+F 1 "100uF" H 3250 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 3538 5100 50  0001 C CNN
+F 3 "" H 3500 5250 50  0000 C CNN
+	1    3500 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 57E398BC
 P 6050 1600
 F 0 "#PWR018" H 6050 1350 50  0001 C CNN
@@ -639,7 +608,7 @@ F 3 "" H 6050 1600 50  0000 C CNN
 $EndComp
 NoConn ~ 6300 2200
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 57F405EC
 P 3000 5400
 F 0 "#PWR019" H 3000 5150 50  0001 C CNN
@@ -650,11 +619,11 @@ F 3 "" H 3000 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 5100 3000 5400
+	3000 5100 3000 5200
 Connection ~ 3000 5200
 Connection ~ 3000 5300
 $Comp
-L CONN_01X01 P1
+L WifiTick-rescue:CONN_01X01 P1
 U 1 1 5804F0A1
 P 5850 2350
 F 0 "P1" H 5850 2250 50  0000 C CNN
@@ -669,7 +638,7 @@ ADC\ninput
 Wire Wire Line
 	6050 2350 6300 2350
 $Comp
-L PWR_FLAG #FLG020
+L power:PWR_FLAG #FLG020
 U 1 1 580CB59F
 P 1850 3050
 F 0 "#FLG020" H 1850 3145 50  0001 C CNN
@@ -680,7 +649,7 @@ F 3 "" H 1850 3050 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG021
+L power:PWR_FLAG #FLG021
 U 1 1 580CC648
 P 1850 3200
 F 0 "#FLG021" H 1850 3295 50  0001 C CNN
@@ -691,7 +660,7 @@ F 3 "" H 1850 3200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR022
+L power:+5V #PWR022
 U 1 1 580CD967
 P 1800 2900
 F 0 "#PWR022" H 1800 2750 50  0001 C CNN
@@ -702,11 +671,11 @@ F 3 "" H 1800 2900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1800 2900 2150 2900
+	1800 2900 1900 2900
 Wire Wire Line
 	3100 2900 2750 2900
 $Comp
-L GND #PWR023
+L power:GND #PWR023
 U 1 1 580CDECE
 P 2050 3200
 F 0 "#PWR023" H 2050 2950 50  0001 C CNN
@@ -717,7 +686,7 @@ F 3 "" H 2050 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 3200 2150 3200
+	1850 3200 2050 3200
 Wire Wire Line
 	2750 3200 2850 3200
 Wire Wire Line
@@ -731,7 +700,7 @@ Wire Wire Line
 	1900 3050 1900 2900
 Connection ~ 1900 2900
 $Comp
-L R R1
+L WifiTick-rescue:R R1
 U 1 1 580CF7CD
 P 2000 2150
 F 0 "R1" V 1950 1950 50  0000 C CNN
@@ -742,7 +711,7 @@ F 3 "" H 2000 2150 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L WifiTick-rescue:R R2
 U 1 1 580CF84D
 P 2000 2300
 F 0 "R2" V 1950 2100 50  0000 C CNN
@@ -753,7 +722,7 @@ F 3 "" H 2000 2300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L WifiTick-rescue:R R3
 U 1 1 580CF8CB
 P 2000 2450
 F 0 "R3" V 1950 2250 50  0000 C CNN
@@ -764,7 +733,7 @@ F 3 "" H 2000 2450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L WifiTick-rescue:R R4
 U 1 1 580CF951
 P 2000 2600
 F 0 "R4" V 1950 2400 50  0000 C CNN
@@ -783,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 2600 1200 2600
 $Comp
-L R R5
+L WifiTick-rescue:R R5
 U 1 1 580D038C
 P 3050 2000
 F 0 "R5" V 3000 1800 50  0000 C CNN
@@ -794,7 +763,7 @@ F 3 "" H 3050 2000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L WifiTick-rescue:R R6
 U 1 1 580D0392
 P 3050 2150
 F 0 "R6" V 3000 1950 50  0000 C CNN
@@ -805,7 +774,7 @@ F 3 "" H 3050 2150 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L WifiTick-rescue:R R7
 U 1 1 580D0398
 P 3050 2300
 F 0 "R7" V 3000 2100 50  0000 C CNN
@@ -816,7 +785,7 @@ F 3 "" H 3050 2300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L WifiTick-rescue:R R8
 U 1 1 580D039E
 P 3050 2450
 F 0 "R8" V 3000 2250 50  0000 C CNN
@@ -827,7 +796,7 @@ F 3 "" H 3050 2450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L WifiTick-rescue:R R9
 U 1 1 580D03A4
 P 3050 2600
 F 0 "R9" V 3000 2400 50  0000 C CNN
@@ -870,7 +839,7 @@ Wire Wire Line
 Text Notes 8600 1700 0    60   ~ 12
 Boot Modes:\nGPIO15     GPIO0      GPIO2\n  0           0           1     UART\n  0           1           1     FLASH\n  1           x           x     SD-CARD
 $Comp
-L LED_ALT D1
+L WifiTick-rescue:LED_ALT D1
 U 1 1 595959F3
 P 4150 2200
 F 0 "D1" H 4150 2300 50  0000 C CNN
@@ -884,4 +853,46 @@ Wire Wire Line
 	4150 2000 4150 2050
 Wire Wire Line
 	4150 2350 4150 2400
+Wire Wire Line
+	1400 5100 1400 4800
+Wire Wire Line
+	3500 4800 3500 5100
+Wire Wire Line
+	6150 3100 6300 3100
+Wire Wire Line
+	6150 3250 6150 3400
+Wire Wire Line
+	6150 3400 6150 3550
+Wire Wire Line
+	6150 3550 6150 3700
+Wire Wire Line
+	6150 3700 6150 3850
+Wire Wire Line
+	6150 3850 6150 4000
+Wire Wire Line
+	5450 4350 6300 4350
+Wire Wire Line
+	5850 4750 6300 4750
+Wire Wire Line
+	5850 4750 5850 4800
+Wire Wire Line
+	5450 4750 5850 4750
+Wire Wire Line
+	2200 5700 2200 5800
+Wire Wire Line
+	1750 4800 1900 4800
+Wire Wire Line
+	5500 3100 6150 3100
+Wire Wire Line
+	9100 2950 9300 2950
+Wire Wire Line
+	5200 4750 5450 4750
+Wire Wire Line
+	3000 5200 3000 5300
+Wire Wire Line
+	3000 5300 3000 5400
+Wire Wire Line
+	2050 3200 2150 3200
+Wire Wire Line
+	1900 2900 2150 2900
 $EndSCHEMATC

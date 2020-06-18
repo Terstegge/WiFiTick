@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name WifiTick-rescue)(type Legacy)(uri ${KIPRJMOD}/WifiTick-rescue.lib)(options "")(descr ""))
+  (lib (name WifiTickLibrary)(type Legacy)(uri ${KIPRJMOD}/WifiTickLibrary.lib)(options "")(descr ""))
+)

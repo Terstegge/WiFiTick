@@ -48,6 +48,6 @@ WiFiTick has the following features:
   LED on the well-known ESP-12E/F boards)
 
 This project contains the hardware design files, which were developed
-using [KiCad EDA](http://kicad-pcb.org/). The related software will be
+using [KiCad EDA](http://kicad.org/). The related software will be
 published in a separate project.
 
